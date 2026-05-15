@@ -12,8 +12,8 @@ export default function Contact() {
     {
       icon: FiMail,
       label: 'Email',
-      value: 'satish.paidikondala@example.com',
-      href: 'mailto:satish.paidikondala@example.com',
+      value: 'satishpaidikondala22@gmail.com',
+      href: 'mailto:satishpaidikondala22@gmail.com',
     },
     {
       icon: FiGithub,
@@ -25,7 +25,7 @@ export default function Contact() {
       icon: FiLinkedin,
       label: 'LinkedIn',
       value: 'Satish Paidikondala',
-      href: 'https://linkedin.com/in/satishpaidikondala',
+      href: 'https://linkedin.com/in/satish-paidikondala',
     },
     {
       icon: FiMapPin,

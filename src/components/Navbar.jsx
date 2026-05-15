@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
+import photo from '../assets/photo.jpg'
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -16,8 +17,11 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-lg border-b border-dark-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#hero" className="text-xl font-heading font-bold text-white">
-            SP<span className="text-primary">.</span>
+          <a href="#hero" className="flex items-center gap-2">
+            <img src={photo} alt="" className="w-8 h-8 rounded-full object-cover ring-2 ring-primary/50" />
+            <span className="text-xl font-heading font-bold text-white">
+              SP<span className="text-primary">.</span>
+            </span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">

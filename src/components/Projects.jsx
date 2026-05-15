@@ -6,36 +6,32 @@ import SectionWrapper from './SectionWrapper'
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'Real-Time Collaborative Editor',
     description:
-      'A full-featured e-commerce platform built with React and Node.js, featuring real-time inventory management, payment integration with Stripe, and a responsive admin dashboard.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-    github: 'https://github.com/satishpaidikondala/ecommerce-platform',
-    live: 'https://ecommerce-demo.example.com',
+      'A real-time collaborative text editor built with Java 21, Spring Boot, and WebSockets. Implements Operational Transformation (OT) algorithm to handle concurrent edits across multiple users seamlessly.',
+    tech: ['Java 21', 'Spring Boot', 'WebSockets', 'PostgreSQL', 'OT Algorithm'],
+    github: 'https://github.com/satishpaidikondala/Real-Time_Collobrative_Editor',
   },
   {
-    title: 'Task Management App',
+    title: 'Blog Platform',
     description:
-      'A collaborative task management application with real-time updates, drag-and-drop kanban boards, team workspaces, and automated workflow triggers.',
-    tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Socket.io'],
-    github: 'https://github.com/satishpaidikondala/task-manager',
-    live: 'https://taskmanager-demo.example.com',
+      'A high-performance, SEO-optimized blog platform built with Next.js, TypeScript, Tailwind CSS, and MDX. Features server-side rendering, dynamic routing, and a rich content authoring experience.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'MDX'],
+    github: 'https://github.com/satishpaidikondala/Blog_Platform',
   },
   {
-    title: 'Weather Dashboard',
+    title: 'Offline Customer Support Chatbot',
     description:
-      'An interactive weather dashboard that displays real-time weather data, 7-day forecasts, and historical trends using data visualization libraries and geolocation APIs.',
-    tech: ['React', 'D3.js', 'OpenWeather API', 'Geolocation API', 'CSS Modules'],
-    github: 'https://github.com/satishpaidikondala/weather-dashboard',
-    live: 'https://weather-dashboard.example.com',
+      'A privacy-first offline chatbot powered by Ollama and Meta Llama 3.2 3B, deployed locally for e-commerce customer support. Demonstrates local LLM deployment without cloud dependency.',
+    tech: ['Python', 'Ollama', 'Llama 3.2', 'Local LLM'],
+    github: 'https://github.com/satishpaidikondala/Offline_Customer_Support_Chatbot',
   },
   {
-    title: 'AI Chat Assistant',
+    title: 'Distributed Shopping Cart Service',
     description:
-      'An intelligent chat assistant powered by large language models, featuring context-aware conversations, document uploads for RAG, and a polished chat UI.',
-    tech: ['Next.js', 'OpenAI API', 'LangChain', 'Pinecone', 'Tailwind CSS'],
-    github: 'https://github.com/satishpaidikondala/ai-chat',
-    live: 'https://ai-chat.example.com',
+      'A production-ready, session-based shopping cart microservice built with Spring Boot and Redis. Implements centralized distributed caching for efficient e-commerce cart management.',
+    tech: ['Spring Boot', 'Redis', 'Java', 'Microservices', 'Distributed Caching'],
+    github: 'https://github.com/satishpaidikondala/Distributed-Shopping-Cart-Service',
   },
 ]
 
@@ -79,14 +75,16 @@ export default function Projects() {
               >
                 <FiGithub size={16} /> Source
               </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
-              >
-                <FiExternalLink size={16} /> Live Demo
-              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
+                >
+                  <FiExternalLink size={16} /> Live Demo
+                </a>
+              )}
             </div>
           </motion.div>
         ))}

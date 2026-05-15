@@ -69,8 +69,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          I build modern, performant web applications with clean code and great user experiences.
-          Passionate about frontend development, animations, and bringing ideas to life.
+          I build distributed systems, real-time applications, and blockchain solutions.
+          Passionate about backend engineering, event-driven architectures, and clean code.
         </motion.p>
 
         <motion.div
