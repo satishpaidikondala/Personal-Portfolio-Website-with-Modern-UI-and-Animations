@@ -64,7 +64,7 @@ npm run preview
 
 ## Live Site
 
-[View Live Portfolio](https://personal-portfolio-website-with-modern-ui-and-animations.vercel.app)
+[View Live Portfolio](https://satishpaidikondala.github.io/Personal-Portfolio-Website-with-Modern-UI-and-Animations/)
 
 ## Lighthouse Scores
 
